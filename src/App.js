@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import TextComponent from './Components/TextComponent/TextComponent';
+import AnotherComponent from './Components/AnotherComponent/AnotherComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Clase de CSS Modules</h2>
+      <div>
+        <p>Algo de texto ejemplo aquí para darle algo de forma a la clase de hoy.</p>
+      </div>
+      <TextComponent />
+      <AnotherComponent />
     </div>
   );
 }
